@@ -1,0 +1,65 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    color: blueviolet;
+    align-items: center;
+    font-size: 1.2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: rgba(95, 87, 87, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),0 2px 4px rgba(0, 0, 0, 0.1),0 2px 4px rgba(0, 0, 0, 0.1),0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav h1 {
+    color: blueviolet;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.nav-search {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-search input {
+    width: 90%;
+    height: 2vw;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 10px;
+    outline: none;
+}
+
+.nav-search button {
+    background: blueviolet;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 0.7vw;
+}
+
+.nav-search button:hover {
+    background: rgb(164, 90, 233);
+}

@@ -1,0 +1,40 @@
+{
+  "seller": [
+    {
+      "id": "446b",
+      "name": "Harsh Goyal",
+      "email": "harsh@gmail.com",
+      "password": "12234"
+    },
+    {
+      "id": "b83d",
+      "name": "Harsh",
+      "email": "harsh6@gmail.com",
+      "password": "1224"
+    },
+    {
+      "id": "cb40",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "6948",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "18f5",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "f29a",
+      "name": "Harsh Goyal",
+      "email": "tayals881@gmail.com",
+      "password": "123344"
+    }
+  ]
+}

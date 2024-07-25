@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+font-family: sans-serif;
+
+}
+
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.seller-auth{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    margin-top: 5vh;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),0 2px 4px rgba(0, 0, 0, 0.1),0 2px 4px rgba(0, 0, 0, 0.1),0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 26vw;
+    height: 50vh;
+}
+.sign-up{
+    width: 80%;  
+    
+}
+.common-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    padding: 2vh;
+}
+.form-input{
+    margin-bottom: 2vh;
+    height: 30px;
+    padding-left:10px;
+}
+
+.form-button{
+    padding: 3px;
+    cursor: pointer;
+}
