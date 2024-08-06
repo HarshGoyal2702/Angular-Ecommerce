@@ -6,11 +6,11 @@ export const authGuard: CanActivateFn = (route, state) => {
   const sellerService = inject(SellerService);
   const router = inject(Router);
 
-  // Add your logic here
-  if (sellerService.isSellerLoggedIn.value) {
+  if (localStorage.getItem('seller')) {
+    sellerService.isSellerLoggedIn.next(true);
     return true;
   } else {
-    router.navigate(['login']);
+    router.navigate(['/seller-auth']);
     return false;
   }
 };

@@ -19,7 +19,7 @@ font-family: sans-serif;
     width: 26vw;
     height: 50vh;
 }
-.sign-up{
+.sign-up,.login{
     width: 80%;  
     
 }
@@ -40,4 +40,10 @@ font-family: sans-serif;
 .form-button{
     padding: 3px;
     cursor: pointer;
+}
+
+.error-p{
+    color:red;
+    font-size:10px;
+    text-align: center;
 }
