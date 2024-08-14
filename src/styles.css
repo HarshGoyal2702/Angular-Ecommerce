@@ -42,6 +42,17 @@ font-family: sans-serif;
     cursor: pointer;
 }
 
+
+.carousel-caption{
+    background-color: rgba(44, 43, 43, 0.587);
+    border-radius: 10px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color:black;
+    border-radius:5px; 
+}
+
 .error-p{
     color:red;
     font-size:10px;

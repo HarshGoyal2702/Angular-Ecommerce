@@ -36,8 +36,8 @@
     <h1>Seller Login</h1>
     <p class="error-p">{{authError}}</p>
     <form
-      #sellerSignUp="ngForm"
-      (ngSubmit)="login(sellerSignUp.value)"
+      #sellerLogin="ngForm"
+      (ngSubmit)="login(sellerLogin.value)"
       class="common-form"
     >
       <input

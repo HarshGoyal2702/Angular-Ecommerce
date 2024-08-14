@@ -1,0 +1,44 @@
+.message-p{
+    text-align: center;
+    color: green;
+}
+.add-product{
+    text-align: center;
+}
+form{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color:white;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.4);
+    width: 30%;
+    padding: 50px 10px;
+    border-radius: 10px;
+}
+.form-input{
+    width: 80%;
+    padding-left: 8px;
+    padding:5px 8px;
+    border-radius: 8px;
+    /* border:none; */
+    outline: none;
+    border:0.8px solid gray
+}
+
+.form-wrapper{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    /* background-color: aqua; */
+    
+}
+
+button{
+    width:85%;
+    padding: 6px;
+}
