@@ -65,6 +65,18 @@
       "name": "HARSH GOYAL",
       "email": "harshgoyal1331@gmail.com",
       "password": "12345"
+    },
+    {
+      "id": "d8cd",
+      "name": "HARSH GOYAL",
+      "email": "harshgoyal1331@gmail.com",
+      "password": "1223"
+    },
+    {
+      "id": "81fe",
+      "name": "HARSH GOYAL",
+      "email": "harshgoyal1331@gmail.com",
+      "password": "1223"
     }
   ],
   "products": [
@@ -105,7 +117,18 @@
       "image": "https://th.bing.com/th/id/OIP.vUWgYTLmysDG8K-zt--pMgHaI6?w=148&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     }
   ],
-  "users":[
-
+  "users": [
+    {
+      "id": "877b",
+      "name": "aman",
+      "email": "aman@aman.com",
+      "password": "aman"
+    },
+    {
+      "id": "cf5e",
+      "name": "govind",
+      "email": "govind@govind.com",
+      "password": "1234"
+    }
   ]
 }

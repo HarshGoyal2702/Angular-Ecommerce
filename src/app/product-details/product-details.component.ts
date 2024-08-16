@@ -15,11 +15,25 @@ export class ProductDetailsComponent {
 productData : undefined | product;
 productQuantity:number = 1;
 quantity:number = 1;
+removeCart= false;
   constructor(private activeRoute : ActivatedRoute,private product:ProductService){
    let productId =  this.activeRoute.snapshot.paramMap.get('productId');
 
    productId && this.product.getProduct(productId).subscribe((result)=>{
     this.productData = result;
+
+    let cartData = localStorage.getItem('localCart');
+    if(productId && cartData){
+      let items = JSON.parse(cartData);
+      items = items.filter((item:product)=>{
+productId==item.id.toString()
+      })
+      if(items.length){
+        this.removeCart= true;
+      }else{
+        this.removeCart= false;
+      }
+    }
    })
 
   }
@@ -30,5 +44,21 @@ quantity:number = 1;
     }else if(val=="min" &&  this.productQuantity>1){
       this.productQuantity -= 1;
     }
+  }
+
+  AddToCart(){
+    if(this.productData){
+      this.productData.quantity = this.productQuantity;
+      if(!localStorage.getItem('user')){
+        alert("Please login to add product to cart");
+        this.product.localAddToCart(this.productData);
+        this.removeCart = true;
+      }
+    }
+  }
+
+  removeToCart(productId:number){
+    this.removeCart = false;
+    this.product.removeItemFromCart(productId);
   }
 }
