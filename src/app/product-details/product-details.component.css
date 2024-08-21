@@ -1,34 +1,121 @@
-.product-image{
+.product-details {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.product-image {
     width: 100%;
-    object-fit:contain;
-    height:400px;
+    height: 60%;
+    border-radius: 8px;
+    object-fit: contain;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.product-color{
-    border:2px solid #ddd;
-    width:40px;
-    height:40px;
+.details {
+    padding: 20px;
+}
+
+.details h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.details h3 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.product-color {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+    border: 2px solid #333;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
-.product-details{
-    margin-top: 50px;
-    margin-bottom: 80px;
+.details h6 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
 }
 
-h1,h5,h6{
-    margin-bottom : 20px;
-}
-
-.quantity-group{
+.form-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
     margin-top: 20px;
 }
 
-.quantity-group button{
-    padding: 10px;
+.form-button:hover {
+    background-color: #0056b3;
 }
 
-.quantity-group input{
+.quantity-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-group button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-group button:hover {
+    background-color: #0056b3;
+}
+
+.quantity-group input {
     width: 50px;
-    padding: 0 10px;
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .product-details {
+        padding: 20px;
+    }
+
+    .details h1 {
+        font-size: 26px;
+    }
+
+    .details h3 {
+        font-size: 20px;
+    }
+
+    .form-button,
+    .quantity-group button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .quantity-group input {
+        width: 40px;
+        font-size: 14px;
+    }
 }

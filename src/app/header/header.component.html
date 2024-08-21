@@ -2,7 +2,7 @@
   <h1>
     <a routerLink="/">E-comm</a>
   </h1>
-  <div *ngIf="menuType=='default'" class="nav-search">
+  <div *ngIf="menuType!=='seller'" class="nav-search">
     <input
       type="text"
       #searchInput
@@ -11,11 +11,11 @@
       placeholder="Search Products"
     />
     <button (click)="submitSearch(searchInput.value)">Search</button>
-    <ul class="suggested-result" *ngIf="searchResult">
+    <ol class="suggested-result" *ngIf="searchResult">
       <li *ngFor="let item of searchResult">
         <a (mousedown)="redirectToDetails(item.id)">{{ item.name }}</a>
       </li>
-    </ul>
+    </ol>
   </div>
   <div [ngSwitch]="menuType">
     <ul *ngSwitchCase="'default'">
@@ -29,7 +29,8 @@
       <li><a routerLink="">Home</a></li>
       <li><a (click)="userLogout()">Logout</a></li>
       <li><a routerLink="user-auth">{{userName}}</a></li>
-      <li><a href="#">Cart({{cartItems}})</a></li>
+      <li><a routerLink="my-orders">My Orders</a></li>
+      <li><a [routerLink]="cartItems>0?'cart-page':null">Cart({{cartItems}})</a></li>
     </ul>
     <ul *ngSwitchCase="'seller'">
       <li><a routerLink="/seller-home">Product List</a></li>
