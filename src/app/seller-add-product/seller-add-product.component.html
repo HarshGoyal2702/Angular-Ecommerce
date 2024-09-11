@@ -1,5 +1,5 @@
 <div class="add-product">
-    <h1>Add Product</h1>
+    <h1 class="text-center"><span class="text-danger">~</span> Add Product <span class="text-danger">~</span></h1>
     <p class="message-p">{{addProductMessage}}</p>
    <div class="form-wrapper">
     <form #addProduct="ngForm" (ngSubmit)="onSubmit(addProduct.value)">
@@ -47,6 +47,23 @@
       ngModel
     />
     <button class="form-button">Add Product</button>
+ 
   </form>
    </div>
+</div>
+
+
+<div class="mt-4 col-5 m-auto">
+  <p class="fs-6 d-inline mx-3">If you want to add a Banner on Home Page Enter Your Image URL</p> <button class="btn btn-success col-1 p-0" (click)="show()">{{Add}}</button>
+<div *ngIf="showValue">
+  <input
+  class="form-input mt-3"
+  type="text"
+  placeholder="Enter Your Product Banner Image URL"
+  name="image3"
+  [(ngModel)] = "image3"
+/>
+<button (click)="AddBannerImages(image3)" class=" col-5 mx-auto bg-primary rounded p-2 text-white border-0 outline-0">Add Banner Image</button>
+
+</div> 
 </div>

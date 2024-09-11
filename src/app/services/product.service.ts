@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
-import { cart, order, product } from '../data-type';
+import { cart, Image, order, product } from '../data-type';
 
 @Injectable({
   providedIn: 'root'
@@ -33,9 +33,17 @@ export class ProductService {
   popularProduct() {
     return this.http.get<product[]>('http://localhost:3000/products?_limit=3');
   }
+  
+  AddBannerImages(data:any){
+    return this.http.post('http://localhost:3000/BannerImages',data)
+  }
+
+  GetBannerImages(){
+    return this.http.get<Image[]>('http://localhost:3000/BannerImages');
+  }
 
   trendyProduct() {
-    return this.http.get<product[]>('http://localhost:3000/products?_limit=8');
+    return this.http.get<product[]>('http://localhost:3000/products?_limit=9');
   }
 
   searchProduct(query: string) {

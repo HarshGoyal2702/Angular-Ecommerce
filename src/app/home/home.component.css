@@ -1,13 +1,27 @@
 .product-header-img{
-    object-fit:contain;
-    height: 600px;
+    /* object-fit:cover; */
+    height: 100%;
     width: 100%;
+    border:none
+}
+.nest{
+    /* background-color: red; */
+    width: 100vw;
+    object-fit: cover;
+    height:80vh ;
+    /* height: 40vh; */
 }
 
-.product-item img{
+.image-wrapper img{
+    /* background-color: red; */
     width: 100%;
-    height: 250px;
+    height: 100%;
     object-fit: contain;
+}
+.image-wrapper{
+    width: 100%;
+    height: 50%;
+    background-color:whitesmoke;
 }
 
 .product-list-wrapper{
@@ -17,13 +31,20 @@
 
 .product-item{
     margin-bottom: 40px;
-    border:1px solid #ddd;
+    /* border:1px solid #ddd; */
+    height: 400px;
     margin-right: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* background-color: black; */
+    /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .product-item .product-details{
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    /* background-color: aqua; */
+    /* border-top: 1px solid #ddd; */
+    /* border-bottom: 1px solid #ddd; */
     padding:15px;
 }
 
@@ -41,9 +62,63 @@
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
-    border:1px solid #ddd;
 }
 .product-footer a{
     text-decoration: none;
     font-size: 13px;
+}
+
+
+/* .nest{
+    background-color: green;
+} */
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.button{
+    /* background-color: rgb(31, 30, 30);
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px; */
+}
+
+.btn{
+    background: rgb(39, 102, 220);
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.btn2{
+    background-color: white;
+    border: 1px solid rgb(39, 102, 220) ;
+    color: black;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(39, 102, 220) ;
+    
+}
+.btn2:hover{
+    background: rgb(39, 102, 220);
+    color: white;
+}
+
+.price-details{
+    background-color:rgba(234, 234, 234, 0.642);
+    color: black;
+}
+
+
+
+.product-item .fa-star {
+    font-size: 0.65rem;
+    color: goldenrod;
+    font-size: 15px;
 }

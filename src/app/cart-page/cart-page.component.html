@@ -1,5 +1,5 @@
 <div class="cart-page">
-    <h1>Cart Page</h1>
+    <h1 class="text-center"><span class="text-danger">~ </span>Cart Page<span class="text-danger"> ~</span></h1>
     <div class="row">
         <div class="col-sm-8 details">
             <ul *ngFor="let cart of cartData">
@@ -16,7 +16,7 @@
                     <span>Quantity : {{cart.quantity}}</span>
                 </li>
                 <li>
-                    <button class="form-button" (click)="removeToCart(cart.id)" >Remove To Cart</button>
+                    <button class="form-button bg-danger text-white fw-3 border-0 px-2 rounded" (click)="removeToCart(cart.id)" >Remove To Cart</button>
                 </li>
             </ul>
            
@@ -36,10 +36,10 @@
                 <li>
                     <span>Discount</span><span>₹{{priceSummary.discount}}</span>
                 </li>
-                <li>
+                <li class=" mt-3 border border-end-0 border-start-0">
                     <span><h4>Total</h4></span><span><h4>₹{{priceSummary.total}}</h4></span>
                 </li>
-                <button class="form-button max-width" (click)="checkout()">CheckOut</button>
+                <button class="form-button max-width bg-success text-white rounded" (click)="checkout()">CheckOut</button>
             </ul>
         </div>
     </div>

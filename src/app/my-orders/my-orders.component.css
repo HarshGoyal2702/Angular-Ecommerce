@@ -1,7 +1,7 @@
 .my-orders h1{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 50px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
 }
 .my-orders{
 }
@@ -11,8 +11,9 @@
 }
 
 .order-data{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    border-top: 1px solid #ddd;
+    /* padding: 10px; */
+
 }

@@ -50,3 +50,8 @@ export interface order{
     userId:number,
     id:number|undefined
 }
+
+export interface Image{
+    image:string,
+    sellerName:string|undefined
+}

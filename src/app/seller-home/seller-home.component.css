@@ -1,15 +1,35 @@
 table{
     text-align: left;
-    color: blueviolet;
+    /* color: blueviolet; */
     border-collapse: collapse;
 }
 
 table td, table th{
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     padding: 10px;
     min-width: 160px;
 }
 img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.product-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.hover-icon:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.form-input{
+    /* width: 10px; */
 }
